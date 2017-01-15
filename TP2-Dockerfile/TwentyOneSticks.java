@@ -5,7 +5,7 @@
    public static void main(String[] args) {
      
      int numSticks = 21;
-     System.out.println("Voulez vous commencer ? (Y/n)");
+     System.out.println("Voulez vous commencer ? (y/n)");
      Scanner input = new Scanner(System.in);
      String goFirst = input.nextLine();
      Scanner take = new Scanner (System.in);
@@ -14,8 +14,8 @@
      while (numSticks > 0) {
        
        if (goFirst.equals("y") || goFirst.equals("Y")) {
-         System.out.println("Il y a " + numSticks + " batonnets");
-         System.out.println("Combien de batonnets choisissez vous (1 ou 2)");
+         System.out.println("Il y a " + numSticks + " bâtonnets");
+         System.out.println("Combien de bâtonnets choisissez vous (1 ou 2) ?");
          numToTake = take.nextInt();
          
          if (numToTake > 2) {
@@ -39,7 +39,7 @@
            else {
              numToTake = 2;
            }
-           System.out.println("L'ordinateur prend " + numToTake + " batonnets" );
+           System.out.println("L'ordinateur prend " + numToTake + " bâtonnets" );
            numSticks = numSticks - numToTake;
            
            if (numSticks <= 0) {
@@ -49,17 +49,8 @@
          
       }
       else {
-             if((numSticks - 2) % 3 == 0 || numSticks - 2 == 0) {
-             numToTake = 1;
-           }
-           else {
-             numToTake = 2;
-           }
-           System.out.println("L'ordianteur prend" + numToTake + " batonnets" );
-           numSticks = numSticks - numToTake;
-           
-           if (numSticks <= 0) {
-             System.out.println("Champion du monde");
+             System.out.println("Vous avez donc peur de m'affronter..");
+			 numSticks = 0;
            }
          }
           }
