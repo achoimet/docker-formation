@@ -14,7 +14,7 @@
      while (numSticks > 0) {
        
        if (goFirst.equals("y") || goFirst.equals("Y")) {
-         System.out.println("Il y a " + numSticks + "batonnets");
+         System.out.println("Il y a " + numSticks + " batonnets");
          System.out.println("Combien de batonnets choisissez vous (1 ou 2)");
          numToTake = take.nextInt();
          
@@ -39,7 +39,7 @@
            else {
              numToTake = 2;
            }
-           System.out.println("L'ordinateur prend " + numToTake + "batonnets" );
+           System.out.println("L'ordinateur prend " + numToTake + " batonnets" );
            numSticks = numSticks - numToTake;
            
            if (numSticks <= 0) {
