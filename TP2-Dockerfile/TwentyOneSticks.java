@@ -51,7 +51,7 @@
       else {
             
              System.out.println("Vous avez donc peur de m'affronter votre propre ordinateur..");
-           
+             numSticks = 0;
          }
           }
        
