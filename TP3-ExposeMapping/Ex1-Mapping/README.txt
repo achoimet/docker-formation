@@ -7,7 +7,7 @@ docker stop $nomdel'image
 et enfin  docker run -d -p ??:?? $nomdel'image
 
 nom des images :
-- doandrewshawcare/random-beer-selector
+- andrewshawcare/random-beer-selector
 - elasticsearch
 - tomcat:8.0
 - macinv/gunicorn-example
